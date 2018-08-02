@@ -63,6 +63,7 @@ export default {
         if (!questions[q_key].answered) {
           qst = questions[q_key]
           this.played = false
+          break
         } else if (q_key == (questions.length - 1)) {
           qst = questions[q_key]
           this.ended = true
